@@ -15,10 +15,11 @@ body {
  header{
     background-color:black;
     color:white;
+    display:flex;
+    justify-content: space-between;
 }
 
 h1 {
-    display: inline-block;
     font-size: 300%;
     padding: 25px;
 }
@@ -27,60 +28,77 @@ h1 {
     color: var(--light);
 }
 
-ul li {
-    display:inline-block;
-
-}
-
 nav {
-    display:inline-block;
-    float: right;
     padding: 40px 10px 40px 0;
     font-size: 110%;
+    justify-content: flex-end;
 }
 
-header h2 {
-    margin-top: -62px;
-    float: right;
+nav ul li {
+    display:inline-block;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: all 300ms ease;
+    text-align:center;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color:var(--light);
+}
+
+nav ul li a:active {
+    box-shadow: inset 0 0 20px white;
+}
+
+nav ul li a:focus {
+    text-decoration: underline;
+}
+
+header div h2 {
+    transform: traslateY(-62px);
     background-color:black;
     padding: 10px 25px;
     font-size: 110%;
 }
 
-ul li a {
-    text-decoration: none;
+.hero {
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: url("../images/charlotte-skyline.jpeg");
+    height: 210px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.hero h2 {
+    background-color: black;
     color: white;
-    margin-right: 20px;
-    transition: all .5s ease;
-    text-align:center;
-    padding: 5px;
-}
-
-ul li a:hover {
-    background-color:var(--light);
-}
-
-ul li a:active {
-    box-shadow: inset 0 0 20px lightblue;
-}
-
-ul li a:focus {
-    text-decoration: underline;
+    padding:10px;
 }
 
 main {
-    float:right;
-    display:inline-block;
-    width: 100%
+    width: 100%;
+    display:flex;
+    height: 100%;
 }
 
 aside {
-    float:left;
     background-color: var(--light);
     width: 30%;
     height:100%;
     text-align:center;
     padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content:stretch;
 }
 
 #selfie {
@@ -100,26 +118,19 @@ aside p {
 
 aside h3 {
     padding: 20px;
+}
 
+aside ul {
+    flex-grow:1;
 }
 
 aside ul li {
     display: block;
 }
 article {
-    border: solid;
     background-color: black;
     color: white;
     padding: 20px;
-}
-
-figure {
-    height: 210px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/charlotte-skyline.jpeg");
-    background-size: cover;
-    background-position: center;
 }
 
 #bigBox {
@@ -129,12 +140,12 @@ figure {
     height: 100px;
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
+.articles {
+    width: 70%;
 }
 
-section div {
-    margin: 5px;
+footer {
+    background-color: black;
+    color:var(--light);
 }
 
