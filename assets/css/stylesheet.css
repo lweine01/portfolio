@@ -12,6 +12,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
  header{
     background-color:black;
     color:white;
@@ -40,8 +45,6 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
     margin-right: 20px;
     transition: all 300ms ease;
     text-align:center;
@@ -88,13 +91,11 @@ main {
     width: 100%;
     display:flex;
     height:auto;
-    alig
 }
 
 aside {
     background-color: var(--light);
     width: 30%;
-    height:100%;
     text-align:center;
     padding: 20px;
     display:flex;
@@ -107,27 +108,34 @@ aside {
     border-radius: 50%;
     border: solid 10px black;
     width:50%;
+    margin-bottom: -10px;
 }
 
 aside h2 {
-    font-size: 200%;
+    font-size: 300%;
+    color:white;
+    padding:5px 15px;
+    border-radius: 15px;
+    background-color:black;
+    font-family: cursive;
 }
 
 aside p {
     border-bottom: solid 2px black;
-    padding: 10px;
-}
-
-aside h3 {
     padding: 20px;
 }
 
-aside ul {
-    flex-grow:1;
+#contactMe {
+    padding: 40px 10px 10px 10px;
+    color: black;
+    font-size: 200%;
 }
 
 aside ul li {
-    display: block;
+    padding: 10px;
+    color:white;
+    font-size: 110%;
+    justify-content: center;
 }
 
 .articles {
@@ -137,7 +145,7 @@ aside ul li {
     padding: 20px;
 }
 
-h3 {
+article h3 {
     color:var(--light);
     font-size: 200%;
     Padding: 10px 20px;
@@ -151,11 +159,55 @@ article section {
     padding: 20px;
 }
 
+article section div {
+    padding: 20px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: solid 5px var(--light);
+    font-size: 150%;
+}
+
+article section div:hover {
+    border:inset;
+}
+
+article section div:active {
+    border:inset var(--light);
+}
+
 #seo {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
+    background-position: inherit;
+    height: 250px;
+    width: calc(70%-40px);
 }
 
+#first {
+    background-image: url("../images/code.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#dumbbells {
+    background-image: url("../images/dumbbells.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#ocean {
+    background-image: url("../images/ocean.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#panthers {
+    background-image: url("../images/panthers.png");
+    background-size: cover;
+    background-position: center;
+}
 
 footer {
     background-color: black;
