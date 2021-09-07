@@ -41,7 +41,6 @@ nav {
 
 nav ul li {
     display:inline-block;
-
 }
 
 nav ul li a {
@@ -68,6 +67,7 @@ header div h2 {
     background-color:black;
     padding: 10px 25px;
     font-size: 110%;
+    
 }
 
 .hero {
@@ -165,11 +165,12 @@ article section {
 article section div {
     padding: 20px;
     display:flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     margin-bottom: 10px;
     border: solid 5px var(--light);
     font-size: 150%;
+    text-align:center;
 }
 
 article section div:hover {
@@ -180,34 +181,34 @@ article section div:active {
     border:inset var(--light);
 }
 
-#seo {
-    background-image: url("../images/digital-marketing-meeting.jpg");
+#dinnerDrinks {
+    background-image: url("../images/cocktails.jpeg");
     background-size: cover;
     background-position: inherit;
     height: 250px;
     width: calc(70%-40px);
 }
 
-#first {
-    background-image: url("../images/code.jpeg");
+#weather {
+    background-image: url("../images/stormclt.jpeg");
     background-size: cover;
     background-position: center;
 }
 
-#dumbbells {
-    background-image: url("../images/dumbbells.jpeg");
+#quiz {
+    background-image: url("../images/quiz.jpeg");
     background-size: cover;
     background-position: center;
 }
 
-#ocean {
-    background-image: url("../images/ocean.jpeg");
+#password {
+    background-image: url("../images/password.jpeg");
     background-size: cover;
     background-position: center;
 }
 
-#panthers {
-    background-image: url("../images/panthers.png");
+#seo {
+    background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -228,6 +229,9 @@ footer {
     .hero {
         justify-content: center;
     }
+    header div h2 {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -245,4 +249,6 @@ footer {
     .articles {
         width: 100%;
     }
+
+
 }
