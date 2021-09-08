@@ -1,6 +1,6 @@
 # Portfolio Webpage Project
 
-[Link to finished website](https://lweine01.github.io/portfolio-webpage-project/)
+[Link to finished website](https://lweine01.github.io/portfolio/)
 
 ## Table of Contents
 - [Description](#Description)
