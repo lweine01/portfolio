@@ -5,8 +5,10 @@
 ## Table of Contents
 - [Description](#Description)
 - [Screenshot](#Screenshot)
+- [License](#License)
 - [Usage](#Usage)
-- [Language](#language)
+- [Language](#Language)
+- [Contact](#Contact)
 
 
 ## Description
@@ -14,9 +16,16 @@ In this homework assignment I created my first professional portfolio. This incl
 
 ## Screenshot
 ![website screenshot](./assets/images/screenshot.png)
+![mobile view screenshot](./assets/images/screenshotmobile.png)
+
+## License
+MIT
 
 ## Usage
 Provides a professional portfolio to showcase to potention employers in the future.
 
 ## Language
 HTML and CSS
+
+## Contact
+LauraRWeiner@gmail.com
